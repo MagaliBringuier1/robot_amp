@@ -182,11 +182,18 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 
 			//Instructions text for the 7-responses version.
 			exampleBlockInst7: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'Rate your feelings toward the targetCats from <i>Extremely negativeAdj</i> to <i>Extremely positiveAdj</i>. ' + 
-			'The items appear and disappear quickly.  ' + 
-			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
+			"Vous verrez apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois."+ 
+			"Les photos servent de signal indiquant l'apparition du caractère chinois."+
+			"Votre tâche est d'estimer si le caractère chinois qui apparait est plaisant visuellement ou non. Ne tenez pas compte de l'image que vous aurez vu juste avant."+
+			"Vore tâche sera de noter si vous trouvez le caractère chinois est plus ou moins plaisant visuellement." +
+			"Les photos servant de signal peuvent parfois biaiser les jugements des caractères chinois."+
+			"Nous nous intéressons à la façon selon laquelle les gens évitent les biais." +
+			"Essayez de votre mieux de ne pas laisser les images interférer sur votre jugement des caractères chinois!"+
+			"Le but est de donner une évaluation rapide et sans réfléchir, des caractères quelles que soient l'image qui les précède.<br/><br/></p>"+ 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
+			"Pour vous donner une idée de la tâche à accomplir, nous commencerons par 8 essais pour de faux."+
+			"La tâche va commencer. Votre tâche est de juger si les caractères chinois sont plus ou moins plaisant visuellement."
+			"Quand vous êtes prêt(e), appuyer sur <b>la barre espace </b>.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
