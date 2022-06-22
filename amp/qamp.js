@@ -124,7 +124,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			showRatingDuration : 300, //In the 7-responses option, for how long to show the selected rating.
 			ITI : 250, //Duration between trials.
 			
-			responses : 2, //Change to 7 for a 1-7 rating
+			responses : 7, //Change to 7 for a 1-7 rating
 	        // When using 7 response options, 
 	        // we will Extremely unpleasant, Moderately unpleasant, Slightly unpleasant, neutral, Slightly pleasant, Moderately pleasant, Extremely pleasant.
 		    targetCat : 'Chinese symbol', //The name of the targets (used in the instructions)
