@@ -181,21 +181,26 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 
 
 			//Instructions text for the 7-responses version.
-			exampleBlockInst7: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
+			exampleBlockInst1: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			"Vous verrez apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois."+ 
 			"Les photos servent de signal indiquant l'apparition du caractère chinois."+
+			'<color="000000">[Consignes 1/4]</p></div>',
+			exampleBlockInst2: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			"Votre tâche est d'estimer si le caractère chinois qui apparait est plaisant visuellement ou non. Ne tenez pas compte de l'image que vous aurez vu juste avant."+
 			"Vore tâche sera de noter si vous trouvez le caractère chinois est plus ou moins plaisant visuellement." +
 			"Les photos servant de signal peuvent parfois biaiser les jugements des caractères chinois."+
+			'<color="000000">[Consignes 2/4]</p></div>',
+			exampleBlockInst3: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' +
 			"Nous nous intéressons à la façon selon laquelle les gens évitent les biais." +
 			"Essayez de votre mieux de ne pas laisser les images interférer sur votre jugement des caractères chinois!"+
 			"Le but est de donner une évaluation rapide et sans réfléchir, des caractères quelles que soient l'image qui les précède.<br/><br/></p>"+ 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
+			'<color="000000">[Consignes 3/4]</p></div>',
+			exampleBlockInst4 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>'+
 			"Pour vous donner une idée de la tâche à accomplir, nous commencerons par 8 essais pour de faux."+
 			"La tâche va commencer. Votre tâche est de juger si les caractères chinois sont plus ou moins plaisant visuellement."+
 			"Quand vous êtes prêt(e), appuyer sur <b>la barre espace </b>.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="000000">[Round 1 of nBlocks]</p></div>',
+			'<color="000000">[Consignes 1/4]</p></div>',
 			firstBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			"See how fast it is? Don't worry if you miss some. " + 
 			'Go with your gut feelings.<br/><br/>' + 
@@ -519,7 +524,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			layout: [
     		    {
     		        location:{top:3},
-    		        media:{html:'To respond: click on your response, or use the keys 1-7'}, css:{color:'#000000','font-size':'1em', 'z-index':'100'}
+    		        media:{html:'Pour répondre, cliquez sur votre choix ou utilisez les touches 1 à 7 de votre clavier numérique'}, css:{color:'#000000','font-size':'1em', 'z-index':'100'}
     		    }
     		],
 			input: [
