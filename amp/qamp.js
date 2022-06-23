@@ -99,8 +99,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'Pleasant', //Response is coded as 1. 
-			sortingLabel2 : 'Unpleasant',  //Response is coded as 0.
+			sortingLabel1 : 'plaisant', //Response is coded as 1. 
+			sortingLabel2 : 'déplaisant',  //Response is coded as 0.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
@@ -931,39 +931,39 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
         			    'font-size':'1.2em', 'cursor':'pointer', 'z-index':'100'
         			}, 
         			location:{left:theLeft, top:startTop},
-        			media:{word : '1 Extremely ' + piCurrent.sortingLabel2},
+        			media:{word : '1 extrêmement ' + piCurrent.sortingLabel2},
         			data : {handle:'rate1'}, 
         			nolog:true
     			}
     		],
     		rate2 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff}, 
-    			media:{word : '2 Moderately ' + piCurrent.sortingLabel2},
+    			media:{word : '2 modérément ' + piCurrent.sortingLabel2},
     			data : {handle:'rate2'}}
     		],
     		rate3 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*2}, 
-    			media:{word : '3 Slightly ' + piCurrent.sortingLabel2},
+    			media:{word : '3 un peu ' + piCurrent.sortingLabel2},
     			data : {handle:'rate3'}}
     		],
     		rate4 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*3}, 
-    			media:{word : '4 Neutral'},
+    			media:{word : '4 neutre'},
     			data : {handle:'rate4'}}
     		],
     		rate5 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*4}, 
-    			media:{word : '5 Slightly ' + piCurrent.sortingLabel1},
+    			media:{word : '5 un peu ' + piCurrent.sortingLabel1},
     			data : {handle:'rate5'}}
     			],
     		rate6 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*5}, 
-    			media:{word : '6 Moderately ' + piCurrent.sortingLabel1},
+    			media:{word : '6 modérément ' + piCurrent.sortingLabel1},
     			data : {handle:'rate6'}}
     		],
     		rate7 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*6}, 
-    			media:{word : '7 Extremely ' + piCurrent.sortingLabel1},
+    			media:{word : '7 extrêmement ' + piCurrent.sortingLabel1},
     			data : {handle:'rate7'}}
     		]
     	});		
