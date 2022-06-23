@@ -1060,14 +1060,53 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		var blockNum = 1;
 		if (piCurrent.trialsInExample > 0)
 		{
-		    var exampleBlockInst = piCurrent.responses==2 ? piCurrent.exampleBlockInst : piCurrent.exampleBlockInst7;
-			//Instructions trial
+		   var exampleBlockInst1 = piCurrent.responses==2 ? piCurrent.exampleBlockInst1 : piCurrent.exampleBlockInst7;
+		    var exampleBlockInst2 = piCurrent.responses==2 ? piCurrent.exampleBlockInst2 : piCurrent.exampleBlockInst7;
+		    var exampleBlockInst3 = piCurrent.responses==2 ? piCurrent.exampleBlockInst3 : piCurrent.exampleBlockInst7;
+		    var exampleBlockInst4 = piCurrent.responses==2 ? piCurrent.exampleBlockInst4 : piCurrent.exampleBlockInst7;
+			
+			//Instructions trial 1/4
 			trialSequence.push(
 				{
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst, blockNum:1})}, nolog:true}, 
+						{media:{html:fromTemplate({template:exampleBlockInst1, blockNum:1})}, nolog:true, css:{color:piCurrent.fontColor}}, 
+						{inherit:'dummyForLog'},
+					]
+				}
+			);
+			//Instructions trial 2/4
+			trialSequence.push(
+				{
+					inherit : 'inst', 
+					data: {blockStart:true, block:blockNum}, 
+					stimuli: [
+						{media:{html:fromTemplate({template:exampleBlockInst2, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
+						{inherit:'dummyForLog'}
+					]
+				}
+			);
+			
+			//Instructions trial 3/4
+			trialSequence.push(
+				{
+					inherit : 'inst', 
+					data: {blockStart:true, block:blockNum}, 
+					stimuli: [
+						{media:{html:fromTemplate({template:exampleBlockInst3, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
+						{inherit:'dummyForLog'}
+					]
+				}
+			);
+			
+			//Instructions trial 4/4
+			trialSequence.push(
+				{
+					inherit : 'inst', 
+					data: {blockStart:true, block:blockNum}, 
+					stimuli: [
+						{media:{html:fromTemplate({template:exampleBlockInst4, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
 						{inherit:'dummyForLog'}
 					]
 				}
