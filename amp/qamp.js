@@ -195,7 +195,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"La tâche va commencer. Votre tâche est de juger si les caractères chinois sont plus ou moins plaisants visuellement."+
 			"Quand vous êtes prêt(e), appuyer sur <b>la barre espace </b>.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="000000">[Round 1 of nBlocks]</p></div>',
+			'<color="000000">[1 of nBlocks]</p></div>',
 			firstBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			"vous avez vu comme c'est rapide ? Ne vous inquiétez pas si vous ratez quelques images. " + 
 			"faites avec votre instinct <br/><br/>" + 
@@ -204,32 +204,34 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Ces images peuvent parfois distraire.<br/><br/>' + 
 			"Mode d'emploi : Vous pouvez répondre avec la souris ou ave les touches 1 à 7 de votre clavier. <br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			"Prê(te) ? Appuyez sur <b>la barre espace </b>.</p>" + 
+			"Prêt(e) ? Appuyez sur <b>la barre espace </b> pour commencer.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="000000">[Round 2 of nBlocks]</p></div>',
+			'<color="000000">[2 of nBlocks]</p></div>',
 			middleBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'Continue to another round of this task. ' + 
-			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on each targetCat and rate it based on your own feelings. ' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
-			'Those items are sometimes distracting.<br/><br/>' + 
+			'Prêt(e) pour une nouvelle série ? ' + 
+			'Les rêgles sont toujours les mêmes : <br/><br/>' + 
+			'Concentrez-vous sur les caractères chinois et évaluez-les en fonction de vos ressentis. ' + 
+			"Evaluez bien les caractères chinois et non pas l'image qui apparait avant. " + 
+			'Ces images peuvent parfois distraire.<br/><br/>' + 
+			"Mode d'emploi : Vous pouvez répondre avec la souris ou ave les touches 1 à 7 de votre clavier. <br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'Ready? Hit the <b>space bar</b>.</p>' + 
+			"Prêt(e) ? Appuyez sur <b>la barre espace </b> pour commencer.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="000000">[Round blockNum of nBlocks]</p></div>',
+			'<color="000000">[blockNum of nBlocks]</p></div>',
 			lastBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'Ready for the FINAL round? ' + 
-			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on each targetCat and rate it based on your own feelings. ' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
-			'Those items are sometimes distracting.<br/><br/>' + 
+			'Prêt(e) pour la dernière série ? ' + 
+			'Les rêgles sont toujours les mêmes : <br/><br/>' + 
+			'Concentrez-vous sur les caractères chinois et évaluez-les en fonction de vos ressentis. ' + 
+			"Evaluez bien les caractères chinois et non pas l'image qui apparait avant. " + 
+			'Ces images peuvent parfois distraire.<br/><br/> ' + 
+			"Mode d'emploi : Vous pouvez répondre avec la souris ou ave les touches 1 à 7 de votre clavier. <br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'Ready? Hit the <b>space bar</b>.</p>' + 
+			"Prêt(e) ? Appuyez sur <b>la barre espace </b> pour commencer. </p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
 			endText: '<div><p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'You have completed the task<br/><br/>Press "space" to continue to next task.</p></div>', 
+			"Vous avez terminé cette tâche, merci !<br/><br/>Appuyez sur 'espace' pour continuer l'étude.</p></div>", 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 
