@@ -181,10 +181,11 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 
 
 			//Instructions text for the 7-responses version.
-			exampleBlockInst7: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			"Vous verrez apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois. "+ 
+			exampleBlockInst7: '<div><p style="font-size:16px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
+			"Vous allez voir apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois. "+ 
 			"Les photos servent de signal indiquant l'apparition du caractère chinois. "+
-			"Votre tâche est d'estimer la mesure dans laquelle le caractère chinois qui apparait vous parait plaisant visuellement. Ne tenez pas compte de l'image que vous aurez vu juste avant. "+
+			"Votre tâche est d'estimer la mesure dans laquelle le caractère chinois qui apparait vous plait visuellement. "+
+			"Ne tenez pas compte de l'image que vous aurez vu juste avant. "+
 			"Vore tâche sera de noter si vous trouvez que le caractère chinois est plus ou moins plaisant visuellement. " +
 			"Les photos servant de signal peuvent parfois biaiser les jugements des caractères chinois. "+
 			"Nous nous intéressons à la façon selon laquelle les gens évitent les biais. " +
@@ -197,12 +198,12 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[1 of nBlocks]</p></div>',
 			firstBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			"vous avez vu comme c'est rapide ? Ne vous inquiétez pas si vous ratez quelques images. " + 
-			"faites avec votre instinct <br/><br/>" + 
+			"Vous avez vu comme c'est rapide ? Ne vous inquiétez pas si vous ratez quelques images. " + 
+			"Faites avec votre instinct <br/><br/>" + 
 			"Concentrez-vous sur chaque caractère chinois et évaluez les en fonction de ce que vous ressentez. " + 
 			"Evaluez bien les caractères chinois et non pas l'image qui apparait avant. " + 
 			'Ces images peuvent parfois distraire.<br/><br/>' + 
-			"Mode d'emploi : Vous pouvez répondre avec la souris ou ave les touches 1 à 7 de votre clavier. <br/><br/>" + 
+			"Mode d'emploi : Vous pouvez répondre avec la souris ou avec les touches 1 à 7 de votre clavier. <br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			"Prêt(e) ? Appuyez sur <b>la barre espace </b> pour commencer.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -213,7 +214,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Concentrez-vous sur les caractères chinois et évaluez-les en fonction de vos ressentis. ' + 
 			"Evaluez bien les caractères chinois et non pas l'image qui apparait avant. " + 
 			'Ces images peuvent parfois distraire.<br/><br/>' + 
-			"Mode d'emploi : Vous pouvez répondre avec la souris ou ave les touches 1 à 7 de votre clavier. <br/><br/>" + 
+			"Mode d'emploi : Vous pouvez répondre avec la souris ou avec les touches 1 à 7 de votre clavier. <br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			"Prêt(e) ? Appuyez sur <b>la barre espace </b> pour commencer.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -224,7 +225,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Concentrez-vous sur les caractères chinois et évaluez-les en fonction de vos ressentis. ' + 
 			"Evaluez bien les caractères chinois et non pas l'image qui apparait avant. " + 
 			'Ces images peuvent parfois distraire.<br/><br/> ' + 
-			"Mode d'emploi : Vous pouvez répondre avec la souris ou ave les touches 1 à 7 de votre clavier. <br/><br/>" + 
+			"Mode d'emploi : Vous pouvez répondre avec la souris ou avec les touches 1 à 7 de votre clavier. <br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			"Prêt(e) ? Appuyez sur <b>la barre espace </b> pour commencer. </p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
