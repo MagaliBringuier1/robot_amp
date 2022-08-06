@@ -136,70 +136,50 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			exampleBlock_targetDuration : 300, 
 			
 			//Instructions text for the 2-responses version.
-			exampleBlockInst1: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color=white><br/>' + 
-			'Now you will complete the first Visual Processing Task.<br/><br/>' + 
-			'You will see pairs of pictures flashed one after the other.<br/><br/>' + 
-			'The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
-			'Your job is to judge the visual pleasantness of each Chinese character.<br/><br/>' +
-			'Of course, there are no right or wrong answers. Just report your own personal feelings as to whether each Chinese character looks relatively pleasant or unpleasant.<br/><br/>' +
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 1/3]</p></div>',
-			exampleBlockInst2: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
-			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
-			'If a Chinese character looks more pleasant than average, press the E key on the left.<br/><br/>' + 
-			'If a Chinese character looks less pleasant than average, press the I key on the right.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 2/3]</p></div>',
-			exampleBlockInst3: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
-			'It is important to note that the pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
-			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the people bias your judgment of the Chinese characters!<br/><br/>' + 
-			'Give us an honest assessment of each Chinese character, regardless of the pictures that precede them.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'To continue, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 3/3]</p></div>',
-			exampleBlockInst4: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
-			'To get a feel for the task, we will begin with 10 practice trials.<br/><br/>' + 
-			"Again, your task is to judge whether the Chinese characters look more pleasant or less pleasant than average by pressing either the 'E' or 'I' key.<br/><br/>" + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'When you are ready to try a few practice trials, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Practice trials]</p></div>',
-			firstBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
-			"Practice is now complete and the first Visual Processing Task will now begin.<br/><br/>" + 
-			"As a reminder, if you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
-			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			exampleBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
+			'Press the key <B>rightKey</B> if the targetCat is more rightAttribute than average. ' + 
+			'Hit the <b>leftKey</b> key if it is more leftAttribute than average.<br/><br/>' + 
+			'The items appear and disappear quickly.  ' + 
+			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
+			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
+			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<color="000000">[Round 1 of nBlocks]</p></div>',
+			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
+			"See how fast it is? Don't worry if you miss some. " + 
+			'Go with your gut feelings.<br/><br/>' + 
+			'Concentrate on each targetCat and rate it as more rightAttribute than the average targetCat with the <b>rightKey</b> key, ' + 
+			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
+			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'Those items are sometimes distracting.<br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff"> </p></div>',
-			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Continue to start the task. ' + 
+			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<color="000000">[Round 2 of nBlocks]</p></div>',
+			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
+			'Continue to another round of this task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
 			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
 			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
 			'Evaluate each targetCat and not the item that appears before it. ' + 
 			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Round blockNum of nBlocks]</p></div>',
-			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'<color="000000">[Round blockNum of nBlocks]</p></div>',
+			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Ready for the FINAL round? ' + 
 			'The rules are exactly the same:<br/><br/>' + 
 			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
 			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
 			'Evaluate each targetCat and not the item that appears before it. ' + 
 			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Round blockNum of nBlocks]</p></div>',
-			
+			'<color="000000">[Round blockNum of nBlocks]</p></div>',
+
+
 			//Instructions text for the 7-responses version.
 			exampleBlockInst1: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			"Vous verrez apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois."+ 
@@ -222,39 +202,39 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Consignes 1/4]</p></div>',
 			firstBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			"Vous avez vu comme c'est rapide ? Ne vous inquiétez pas si vous ratez une image. " + 
-			'Faites avec votre instinct.<br/><br/>' + 
-			'Concentrez-vous sur chaque caractère chinoix et évaluez le en fonction de vos ressentis. ' + 
-			'Evaluez chaque caractère chinois et non pas les images qui apparaissent avant.' + 
-			'Ces images sont parfois distractrices. <br/><br/>' + 
-			"Mode d'emploi : vous pouvez répondre à l'aide de votre souris ou en utilisant les touches 1 à 7 de votre clavier.<br/><br/>' + 
+			"See how fast it is? Don't worry if you miss some. " + 
+			'Go with your gut feelings.<br/><br/>' + 
+			'Concentrate on each targetCat and rate it based on your own feelings. ' + 
+			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'Those items are sometimes distracting.<br/><br/>' + 
+			'Notice: you can respond with your mouse or the keys 1-7.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'Prêt(e) ? Appuyez sur la <b>barre espace</b>.</p>' + 
+			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			"<color="000000">[Round 2 of nBlocks]</p></div>",
+			'<color="000000">[Round 2 of nBlocks]</p></div>',
 			middleBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'On continue pour un autre tours. ' + 
-			'Les rêgles sont toujours les mêmes :<br/><br/>' + 
-			'Concentrez vous sur les caractères chinois et évaluez les selon votre ressenti. ' + 
-			'Evaluez les caractères chinois, pas les images qui appraissent avant. ' + 
-			'Ces images sont parfois distractrices.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/> ' + 
-			'Prêt(e) ? Appuyez sur la <b>barre espace</b>.</p>' + 
+			'Continue to another round of this task. ' + 
+			'The rules are exactly the same:<br/><br/>' + 
+			'Concentrate on each targetCat and rate it based on your own feelings. ' + 
+			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'Those items are sometimes distracting.<br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
+			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 			lastBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'Dernier tours, vous êtes prêt(e)' + 
-			'Les rêgles sont toujours les mêmes :<br/><br/>' + 
-			'Concentrez vous sur les caractères chinois et évaluez les selon votre ressenti. ' + 
-			'Evaluez les caractères chinois, pas les images qui appraissent avant. ' + 
-			'Ces images sont parfois distractrices.<br/><br/>' + 
+			'Ready for the FINAL round? ' + 
+			'The rules are exactly the same:<br/><br/>' + 
+			'Concentrate on each targetCat and rate it based on your own feelings. ' + 
+			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'Those items are sometimes distracting.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'Prêt(e) ? Appuyez sur la <b>barre espace</b>.</p>' + 
+			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
 			endText: '<div><p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'Vous avez terminé cette tâche<br/><br/>Appuyez sur "espace" pour continuer.</p></div>', 
+			'You have completed the task<br/><br/>Press "space" to continue to next task.</p></div>', 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 
