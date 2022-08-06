@@ -126,7 +126,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			responses : 7, //Change to 7 for a 1-7 rating
 	        // When using 7 response options, 
-	        // we will Extremely unpleasant, Moderately unpleasant, Slightly unpleasant, neutral, Slightly pleasant, Moderately pleasant, Extremely pleasant.
+	        // we will Extrêmement déplaisant, 2, 3, 4, 5, 6, Extrêment plaisant.
 		    targetCat : 'Chinese symbol', //The name of the targets (used in the instructions)
 			
 			//For the example block (often practice)
@@ -521,7 +521,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			layout: [
     		    {
     		        location:{top:3},
-    		        media:{html:'To respond: click on your response, or use the keys 1-7'}, css:{color:'#000000','font-size':'1em', 'z-index':'100'}
+    		        media:{html:'Pour répondre, utilisez votre souris ou les touches 1 à 7 de votre clavier.'}, css:{color:'#000000','font-size':'1em', 'z-index':'100'}
     		    }
     		],
 			input: [
@@ -933,39 +933,39 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
         			    'font-size':'1.2em', 'cursor':'pointer', 'z-index':'100'
         			}, 
         			location:{left:theLeft, top:startTop},
-        			media:{word : '1 Extremely ' + piCurrent.sortingLabel2},
+        			media:{word : '1 Extrêmement ' + piCurrent.sortingLabel2},
         			data : {handle:'rate1'}, 
         			nolog:true
     			}
     		],
     		rate2 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff}, 
-    			media:{word : '2 Moderately ' + piCurrent.sortingLabel2},
+    			media:{word : '2' + piCurrent.sortingLabel2},
     			data : {handle:'rate2'}}
     		],
     		rate3 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*2}, 
-    			media:{word : '3 Slightly ' + piCurrent.sortingLabel2},
+    			media:{word : '3' + piCurrent.sortingLabel2},
     			data : {handle:'rate3'}}
     		],
     		rate4 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*3}, 
-    			media:{word : '4 Neutral'},
+    			media:{word : '4'},
     			data : {handle:'rate4'}}
     		],
     		rate5 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*4}, 
-    			media:{word : '5 Slightly ' + piCurrent.sortingLabel1},
+    			media:{word : '5' + piCurrent.sortingLabel1},
     			data : {handle:'rate5'}}
     			],
     		rate6 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*5}, 
-    			media:{word : '6 Moderately ' + piCurrent.sortingLabel1},
+    			media:{word : '6' + piCurrent.sortingLabel1},
     			data : {handle:'rate6'}}
     		],
     		rate7 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*6}, 
-    			media:{word : '7 Extremely ' + piCurrent.sortingLabel1},
+    			media:{word : '7 Extrêmement ' + piCurrent.sortingLabel1},
     			data : {handle:'rate7'}}
     		]
     	});		
