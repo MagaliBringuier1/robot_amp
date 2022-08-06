@@ -231,14 +231,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Prêt(e) ? Appuyez sur la <b>barre espace</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="000000">[Round 2 of nBlocks]</p></div>',
+			"<color="000000">[Round 2 of nBlocks]</p></div>",
 			middleBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'On continue pour un autre tours. ' + 
 			'Les rêgles sont toujours les mêmes :<br/><br/>' + 
 			'Concentrez vous sur les caractères chinois et évaluez les selon votre ressenti. ' + 
 			'Evaluez les caractères chinois, pas les images qui appraissent avant. ' + 
 			'Ces images sont parfois distractrices.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/> ' + 
 			'Prêt(e) ? Appuyez sur la <b>barre espace</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
