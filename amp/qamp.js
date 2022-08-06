@@ -380,8 +380,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		}
 		
 		var layout2 = [
-				{location:{left:2,top:2},media:{word:'key: '+ piCurrent.leftKey.toUpperCase()}, css:{color:piCurrent.fontColor,'font-size':'1em'}},
-				{location:{right:2,top:2},media:{word:'key: ' + piCurrent.rightKey.toUpperCase()},  css:{color:piCurrent.fontColor,'font-size':'1em'}},
+				{location:{left:2,top:2},media:{word:'key: '+ piCurrent.leftKey.toUpperCase()}, css:{color:#FFFFFF,'font-size':'1em'}},
+				{location:{right:2,top:2},media:{word:'key: ' + piCurrent.rightKey.toUpperCase()},  css:{color:#FFFFFF,'font-size':'1em'}},
 				{location:{left:2,top:5},media:{word:leftSortingLabel}, css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}},
 				{location:{right:2,top:5},media:{word:rightSortingLabel},  css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}}
 			];
@@ -855,7 +855,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		API.addStimulusSets({
 		// This Default stimulus is inherited by the other stimuli so that we can have a consistent look and change it from one place
 			Default: [
-				{css:{color:piCurrent.fontColor,'font-size':'2em'}}
+				{css:{color:#FFFFFF,'font-size':'2em'}}
 			],
 
 			fixationStim : [
