@@ -929,7 +929,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
     			{
     			    inherit:'Default', 
         			css:{
-        			    'background-color': '#ffccff', 'border-style': 'solid', 'border-radius': '7px', 
+        			    'background-color': '#ffffff', 'border-style': 'solid', 'border-radius': '7px', 
         			    'padding': '2px 3px 2px 3px',
         			    'font-size':'1.2em', 'cursor':'pointer', 'z-index':'100'
         			}, 
