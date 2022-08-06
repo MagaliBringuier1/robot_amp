@@ -99,8 +99,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'Pleasant', //Response is coded as 1. 
-			sortingLabel2 : 'Unpleasant',  //Response is coded as 0.
+			sortingLabel1 : 'Plaisant', //Response is coded as 1. 
+			sortingLabel2 : 'Déplaisant',  //Response is coded as 0.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
@@ -940,27 +940,27 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
     		],
     		rate2 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff}, 
-    			media:{word : '2' + piCurrent.sortingLabel2},
+    			media:{word : '2 Modérément ' + piCurrent.sortingLabel2},
     			data : {handle:'rate2'}}
     		],
     		rate3 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*2}, 
-    			media:{word : '3' + piCurrent.sortingLabel2},
+    			media:{word : '3 Légèrement ' + piCurrent.sortingLabel2},
     			data : {handle:'rate3'}}
     		],
     		rate4 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*3}, 
-    			media:{word : '4'},
+    			media:{word : '4 Neutre '},
     			data : {handle:'rate4'}}
     		],
     		rate5 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*4}, 
-    			media:{word : '5' + piCurrent.sortingLabel1},
+    			media:{word : '5 Légèrement ' + piCurrent.sortingLabel1},
     			data : {handle:'rate5'}}
     			],
     		rate6 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*5}, 
-    			media:{word : '6' + piCurrent.sortingLabel1},
+    			media:{word : '6 Modérément ' + piCurrent.sortingLabel1},
     			data : {handle:'rate6'}}
     		],
     		rate7 : [
