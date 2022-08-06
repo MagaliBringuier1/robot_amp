@@ -79,6 +79,9 @@ define(['pipAPI', 'https://magalibringuier1.github.io/robot_amp/amp/qamp.js'], f
  				{image : 'h30.jpg'}]
 			}
 		],
+		responses : 7, 
+
+		ITI : 750, //Duration between trials.
 
 		examplePrimeStimulus : 
 		{
