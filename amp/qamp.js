@@ -64,21 +64,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 						{image : 'pic30.jpg'}, {image : 'pic31.jpg'}, {image : 'pic32.jpg'}, {image : 'pic33.jpg'}, {image : 'pic34.jpg'}, {image : 'pic35.jpg'}, {image : 'pic36.jpg'}, {image : 'pic37.jpg'}, {image : 'pic38.jpg'}, {image : 'pic39.jpg'}, 
 						{image : 'pic40.jpg'}, {image : 'pic41.jpg'}, {image : 'pic42.jpg'}, {image : 'pic43.jpg'}, {image : 'pic44.jpg'}, {image : 'pic45.jpg'}, {image : 'pic46.jpg'}, {image : 'pic47.jpg'}, {image : 'pic48.jpg'}, {image : 'pic49.jpg'}, 
 						{image : 'pic50.jpg'}, {image : 'pic51.jpg'}, {image : 'pic52.jpg'}, {image : 'pic53.jpg'}, {image : 'pic54.jpg'}, {image : 'pic55.jpg'}, {image : 'pic56.jpg'}, {image : 'pic57.jpg'}, {image : 'pic58.jpg'}, {image : 'pic59.jpg'}, 
-						{image : 'pic60.jpg'}, {image : 'pic61.jpg'}, {image : 'pic62.jpg'}, {image : 'pic63.jpg'}, {image : 'pic64.jpg'}, {image : 'pic65.jpg'}, {image : 'pic66.jpg'}, {image : 'pic67.jpg'}, {image : 'pic68.jpg'}, {image : 'pic69.jpg'}, 
-						{image : 'pic70.jpg'}, {image : 'pic71.jpg'}, {image : 'pic72.jpg'}, {image : 'pic73.jpg'}, {image : 'pic74.jpg'}, {image : 'pic75.jpg'}, {image : 'pic76.jpg'}, {image : 'pic77.jpg'}, {image : 'pic78.jpg'}, {image : 'pic79.jpg'}, 
-						{image : 'pic80.jpg'}, {image : 'pic81.jpg'}, {image : 'pic82.jpg'}, {image : 'pic83.jpg'}, {image : 'pic84.jpg'}, {image : 'pic85.jpg'}, {image : 'pic86.jpg'}, {image : 'pic87.jpg'}, {image : 'pic88.jpg'}, {image : 'pic89.jpg'}, 
-						{image : 'pic90.jpg'}, {image : 'pic91.jpg'}, {image : 'pic92.jpg'}, {image : 'pic93.jpg'}, {image : 'pic94.jpg'}, {image : 'pic95.jpg'}, {image : 'pic96.jpg'}, {image : 'pic97.jpg'}, {image : 'pic98.jpg'}, {image : 'pic99.jpg'}, 
-						{image : 'pic110.jpg'}, {image : 'pic111.jpg'}, {image : 'pic112.jpg'}, {image : 'pic113.jpg'}, {image : 'pic114.jpg'}, {image : 'pic115.jpg'}, {image : 'pic116.jpg'}, {image : 'pic117.jpg'}, {image : 'pic118.jpg'}, {image : 'pic119.jpg'}, 
-						{image : 'pic120.jpg'}, {image : 'pic121.jpg'}, {image : 'pic122.jpg'}, {image : 'pic123.jpg'}, {image : 'pic124.jpg'}, {image : 'pic125.jpg'}, {image : 'pic126.jpg'}, {image : 'pic127.jpg'}, {image : 'pic128.jpg'}, {image : 'pic129.jpg'}, 
-						{image : 'pic130.jpg'}, {image : 'pic131.jpg'}, {image : 'pic132.jpg'}, {image : 'pic133.jpg'}, {image : 'pic134.jpg'}, {image : 'pic135.jpg'}, {image : 'pic136.jpg'}, {image : 'pic137.jpg'}, {image : 'pic138.jpg'}, {image : 'pic139.jpg'}, 
-						{image : 'pic140.jpg'}, {image : 'pic141.jpg'}, {image : 'pic142.jpg'}, {image : 'pic143.jpg'}, {image : 'pic144.jpg'}, {image : 'pic145.jpg'}, {image : 'pic146.jpg'}, {image : 'pic147.jpg'}, {image : 'pic148.jpg'}, {image : 'pic149.jpg'}, 
-						{image : 'pic150.jpg'}, {image : 'pic151.jpg'}, {image : 'pic152.jpg'}, {image : 'pic153.jpg'}, {image : 'pic154.jpg'}, {image : 'pic155.jpg'}, {image : 'pic156.jpg'}, {image : 'pic157.jpg'}, {image : 'pic158.jpg'}, {image : 'pic159.jpg'}, 
-						{image : 'pic160.jpg'}, {image : 'pic161.jpg'}, {image : 'pic162.jpg'}, {image : 'pic163.jpg'}, {image : 'pic164.jpg'}, {image : 'pic165.jpg'}, {image : 'pic166.jpg'}, {image : 'pic167.jpg'}, {image : 'pic168.jpg'}, {image : 'pic169.jpg'}, 
-						{image : 'pic170.jpg'}, {image : 'pic171.jpg'}, {image : 'pic172.jpg'}, {image : 'pic173.jpg'}, {image : 'pic174.jpg'}, {image : 'pic175.jpg'}, {image : 'pic176.jpg'}, {image : 'pic177.jpg'}, {image : 'pic178.jpg'}, {image : 'pic179.jpg'}, 
-						{image : 'pic180.jpg'}, {image : 'pic181.jpg'}, {image : 'pic182.jpg'}, {image : 'pic183.jpg'}, {image : 'pic184.jpg'}, {image : 'pic185.jpg'}, {image : 'pic186.jpg'}, {image : 'pic187.jpg'}, {image : 'pic188.jpg'}, {image : 'pic189.jpg'}, 
-						{image : 'pic190.jpg'}, {image : 'pic191.jpg'}, {image : 'pic192.jpg'}, {image : 'pic193.jpg'}, {image : 'pic194.jpg'}, {image : 'pic195.jpg'}, {image : 'pic196.jpg'}, {image : 'pic197.jpg'}, {image : 'pic198.jpg'}, {image : 'pic199.jpg'}, 
-						{image : 'pic200.jpg'}
-					]
+						{image : 'pic60.jpg'}, {image : 'pic61.jpg'}, {image : 'pic62.jpg'}, {image : 'pic63.jpg'}, {image : 'pic64.jpg'}, {image : 'pic65.jpg'}, {image : 'pic66.jpg'}, {image : 'pic67.jpg'}, {image : 'pic68.jpg'}
+				]
 					
 				}
 			],
@@ -103,7 +90,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//The mask stimulus in the example block
 			exampleMaskStimulus : {
 				css : {color:'000000', 'font-size':'3em'}, 
-				media : {image:'ampmaskr.jpg'}
+				media : {image:'ampmaskt.jpg'}
 			}, 
 			//The mask stimulus 
 			maskStimulus : {
@@ -112,8 +99,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'Pleasant', //Response is coded as 0. 
-			sortingLabel2 : 'Unpleasant',  //Response is coded as 1.
+			sortingLabel1 : 'Pleasant', //Response is coded as 1. 
+			sortingLabel2 : 'Unpleasant',  //Response is coded as 0.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
@@ -123,11 +110,11 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			leftKey : 'e', 
 			
 			base_url : {//Where are your images at?
-				image : 'https://baranan.github.io/minno-tasks/images/ampImages'
+				image : 'https://magalibringuier1.github.io/robot_amp/amp/images'
 			}, 
 
-			trialsInBlock : [40, 40, 40], //Number of trials in each block 
-			trialsInExample : 3, //Change to 0 if you don't want an example block
+			trialsInBlock : [20, 20, 20], //Number of trials in each block 
+			trialsInExample : 8, //Change to 0 if you don't want an example block
 			
 			//Duration parameters.
 			fixationDuration : -1, //It means that by default we do not use fixation.
@@ -137,7 +124,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			showRatingDuration : 300, //In the 7-responses option, for how long to show the selected rating.
 			ITI : 250, //Duration between trials.
 			
-			responses : 2, //Change to 7 for a 1-7 rating
+			responses : 7, //Change to 7 for a 1-7 rating
 	        // When using 7 response options, 
 	        // we will Extremely unpleasant, Moderately unpleasant, Slightly unpleasant, neutral, Slightly pleasant, Moderately pleasant, Extremely pleasant.
 		    targetCat : 'Chinese symbol', //The name of the targets (used in the instructions)
@@ -195,11 +182,18 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 
 			//Instructions text for the 7-responses version.
 			exampleBlockInst7: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'Rate your feelings toward the targetCats from <i>Extremely negativeAdj</i> to <i>Extremely positiveAdj</i>. ' + 
-			'The items appear and disappear quickly.  ' + 
-			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
+			"Vous verrez apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois."+ 
+			"Les photos servent de signal indiquant l'apparition du caractère chinois."+
+			"Votre tâche est d'estimer si le caractère chinois qui apparait est plaisant visuellement ou non. Ne tenez pas compte de l'image que vous aurez vu juste avant."+
+			"Vore tâche sera de noter si vous trouvez le caractère chinois est plus ou moins plaisant visuellement." +
+			"Les photos servant de signal peuvent parfois biaiser les jugements des caractères chinois."+
+			"Nous nous intéressons à la façon selon laquelle les gens évitent les biais." +
+			"Essayez de votre mieux de ne pas laisser les images interférer sur votre jugement des caractères chinois!"+
+			"Le but est de donner une évaluation rapide et sans réfléchir, des caractères quelles que soient l'image qui les précède.<br/><br/></p>"+ 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
+			"Pour vous donner une idée de la tâche à accomplir, nous commencerons par 8 essais pour de faux."+
+			"La tâche va commencer. Votre tâche est de juger si les caractères chinois sont plus ou moins plaisant visuellement."+
+			"Quand vous êtes prêt(e), appuyer sur <b>la barre espace </b>.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
