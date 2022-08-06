@@ -182,29 +182,29 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 
 			//Instructions text for the 7-responses version.
 			exampleBlockInst7: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			"Vous verrez apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois."+ 
-			"Les photos servent de signal indiquant l'apparition du caractère chinois."+
-			"Votre tâche est d'estimer si le caractère chinois qui apparait est plaisant visuellement ou non. Ne tenez pas compte de l'image que vous aurez vu juste avant."+
-			"Vore tâche sera de noter si vous trouvez le caractère chinois est plus ou moins plaisant visuellement." +
-			"Les photos servant de signal peuvent parfois biaiser les jugements des caractères chinois."+
-			"Nous nous intéressons à la façon selon laquelle les gens évitent les biais." +
-			"Essayez de votre mieux de ne pas laisser les images interférer sur votre jugement des caractères chinois!"+
-			"Le but est de donner une évaluation rapide et sans réfléchir, des caractères quelles que soient l'image qui les précède.<br/><br/></p>"+ 
+			"Vous verrez apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois. "+ 
+			"Les photos servent de signal indiquant l'apparition du caractère chinois. "+
+			"Votre tâche est d'estimer la mesure dans laquelle le caractère chinois qui apparait vous parait plaisant visuellement. Ne tenez pas compte de l'image que vous aurez vu juste avant. "+
+			"Vore tâche sera de noter si vous trouvez que le caractère chinois est plus ou moins plaisant visuellement. " +
+			"Les photos servant de signal peuvent parfois biaiser les jugements des caractères chinois. "+
+			"Nous nous intéressons à la façon selon laquelle les gens évitent les biais. " +
+			"Essayez de votre mieux de ne pas laisser les images interférer sur votre jugement des caractères chinois. "+
+			"Le but est de donner une évaluation rapide et sans réfléchir des caractères, quelles que soient l'image qui les précède. <br/><br/></p>"+ 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			"Pour vous donner une idée de la tâche à accomplir, nous commencerons par 8 essais pour de faux."+
-			"La tâche va commencer. Votre tâche est de juger si les caractères chinois sont plus ou moins plaisant visuellement."+
+			"Pour vous donner une idée de la tâche à accomplir, nous commencerons par 8 essais. "+
+			"La tâche va commencer. Votre tâche est de juger si les caractères chinois sont plus ou moins plaisants visuellement."+
 			"Quand vous êtes prêt(e), appuyer sur <b>la barre espace </b>.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			"See how fast it is? Don't worry if you miss some. " + 
-			'Go with your gut feelings.<br/><br/>' + 
-			'Concentrate on each targetCat and rate it based on your own feelings. ' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
-			'Those items are sometimes distracting.<br/><br/>' + 
-			'Notice: you can respond with your mouse or the keys 1-7.<br/><br/>' + 
+			"vous avez vu comme c'est rapide ? Ne vous inquiétez pas si vous ratez quelques images. " + 
+			"faites avec votre instinct <br/><br/>" + 
+			"Concentrez-vous sur chaque caractère chinois et évaluez les en fonction de ce que vous ressentez. " + 
+			"Evaluez bien les caractères chinois et non pas l'image qui apparait avant. " + 
+			'Ces images peuvent parfois distraire.<br/><br/>' + 
+			"Mode d'emploi : Vous pouvez répondre avec la souris ou ave les touches 1 à 7 de votre clavier. <br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'Ready? Hit the <b>space bar</b>.</p>' + 
+			"Prê(te) ? Appuyez sur <b>la barre espace </b>.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 2 of nBlocks]</p></div>',
 			middleBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
