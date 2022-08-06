@@ -90,7 +90,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//The mask stimulus in the example block
 			exampleMaskStimulus : {
 				css : {color:'000000', 'font-size':'3em'}, 
-				media : {image:'ampmaskt.jpg'}
+				media : {image:'ampmask.jpg'}
 			}, 
 			//The mask stimulus 
 			maskStimulus : {
@@ -99,8 +99,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'plaisant', //Response is coded as 1. 
-			sortingLabel2 : 'déplaisant',  //Response is coded as 0.
+			sortingLabel1 : 'Pleasant', //Response is coded as 1. 
+			sortingLabel2 : 'Unpleasant',  //Response is coded as 0.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
@@ -124,7 +124,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			showRatingDuration : 300, //In the 7-responses option, for how long to show the selected rating.
 			ITI : 250, //Duration between trials.
 			
-			responses : 7, //Change to 7 for a 1-7 rating
+			responses : 2, //Change to 7 for a 1-7 rating
 	        // When using 7 response options, 
 	        // we will Extremely unpleasant, Moderately unpleasant, Slightly unpleasant, neutral, Slightly pleasant, Moderately pleasant, Extremely pleasant.
 		    targetCat : 'Chinese symbol', //The name of the targets (used in the instructions)
@@ -181,26 +181,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 
 
 			//Instructions text for the 7-responses version.
-			exampleBlockInst1: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			"Vous verrez apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois."+ 
-			"Les photos servent de signal indiquant l'apparition du caractère chinois."+
-			'<color="000000">[Consignes 1/4]</p></div>',
-			exampleBlockInst2: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			"Votre tâche est d'estimer si le caractère chinois qui apparait est plaisant visuellement ou non. Ne tenez pas compte de l'image que vous aurez vu juste avant."+
-			"Vore tâche sera de noter si vous trouvez le caractère chinois est plus ou moins plaisant visuellement." +
-			"Les photos servant de signal peuvent parfois biaiser les jugements des caractères chinois."+
-			'<color="000000">[Consignes 2/4]</p></div>',
-			exampleBlockInst3: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' +
-			"Nous nous intéressons à la façon selon laquelle les gens évitent les biais." +
-			"Essayez de votre mieux de ne pas laisser les images interférer sur votre jugement des caractères chinois!"+
-			"Le but est de donner une évaluation rapide et sans réfléchir, des caractères quelles que soient l'image qui les précède.<br/><br/></p>"+ 
-			'<color="000000">[Consignes 3/4]</p></div>',
-			exampleBlockInst4 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>'+
-			"Pour vous donner une idée de la tâche à accomplir, nous commencerons par 8 essais pour de faux."+
-			"La tâche va commencer. Votre tâche est de juger si les caractères chinois sont plus ou moins plaisant visuellement."+
-			"Quand vous êtes prêt(e), appuyer sur <b>la barre espace </b>.</p>" + 
+			exampleBlockInst7: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
+			'Rate your feelings toward the targetCats from <i>Extremely negativeAdj</i> to <i>Extremely positiveAdj</i>. ' + 
+			'The items appear and disappear quickly.  ' + 
+			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
+			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="000000">[Consignes 1/4]</p></div>',
+			'<color="000000">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst7 : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			"See how fast it is? Don't worry if you miss some. " + 
 			'Go with your gut feelings.<br/><br/>' + 
@@ -524,7 +512,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			layout: [
     		    {
     		        location:{top:3},
-    		        media:{html:'Pour répondre, cliquez sur votre choix ou utilisez les touches 1 à 7 de votre clavier numérique'}, css:{color:'#000000','font-size':'1em', 'z-index':'100'}
+    		        media:{html:'To respond: click on your response, or use the keys 1-7'}, css:{color:'#000000','font-size':'1em', 'z-index':'100'}
     		    }
     		],
 			input: [
@@ -936,39 +924,39 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
         			    'font-size':'1.2em', 'cursor':'pointer', 'z-index':'100'
         			}, 
         			location:{left:theLeft, top:startTop},
-        			media:{word : '1 extrêmement ' + piCurrent.sortingLabel2},
+        			media:{word : '1 Extremely ' + piCurrent.sortingLabel2},
         			data : {handle:'rate1'}, 
         			nolog:true
     			}
     		],
     		rate2 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff}, 
-    			media:{word : '2 modérément ' + piCurrent.sortingLabel2},
+    			media:{word : '2 Moderately ' + piCurrent.sortingLabel2},
     			data : {handle:'rate2'}}
     		],
     		rate3 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*2}, 
-    			media:{word : '3 un peu ' + piCurrent.sortingLabel2},
+    			media:{word : '3 Slightly ' + piCurrent.sortingLabel2},
     			data : {handle:'rate3'}}
     		],
     		rate4 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*3}, 
-    			media:{word : '4 neutre'},
+    			media:{word : '4 Neutral'},
     			data : {handle:'rate4'}}
     		],
     		rate5 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*4}, 
-    			media:{word : '5 un peu ' + piCurrent.sortingLabel1},
+    			media:{word : '5 Slightly ' + piCurrent.sortingLabel1},
     			data : {handle:'rate5'}}
     			],
     		rate6 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*5}, 
-    			media:{word : '6 modérément ' + piCurrent.sortingLabel1},
+    			media:{word : '6 Moderately ' + piCurrent.sortingLabel1},
     			data : {handle:'rate6'}}
     		],
     		rate7 : [
     			{inherit:'rate1', location:{left:theLeft, top:startTop+topDiff*6}, 
-    			media:{word : '7 extrêmement ' + piCurrent.sortingLabel1},
+    			media:{word : '7 Extremely ' + piCurrent.sortingLabel1},
     			data : {handle:'rate7'}}
     		]
     	});		
@@ -1060,53 +1048,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		var blockNum = 1;
 		if (piCurrent.trialsInExample > 0)
 		{
-		   var exampleBlockInst1 = piCurrent.responses==2 ? piCurrent.exampleBlockInst1 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst2 = piCurrent.responses==2 ? piCurrent.exampleBlockInst2 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst3 = piCurrent.responses==2 ? piCurrent.exampleBlockInst3 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst4 = piCurrent.responses==2 ? piCurrent.exampleBlockInst4 : piCurrent.exampleBlockInst7;
-			
-			//Instructions trial 1/4
+		    var exampleBlockInst = piCurrent.responses==2 ? piCurrent.exampleBlockInst : piCurrent.exampleBlockInst7;
+			//Instructions trial
 			trialSequence.push(
 				{
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst1, blockNum:1})}, nolog:true, css:{color:piCurrent.fontColor}}, 
-						{inherit:'dummyForLog'},
-					]
-				}
-			);
-			//Instructions trial 2/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst2, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
-						{inherit:'dummyForLog'}
-					]
-				}
-			);
-			
-			//Instructions trial 3/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst3, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
-						{inherit:'dummyForLog'}
-					]
-				}
-			);
-			
-			//Instructions trial 4/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst4, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
+						{media:{html:fromTemplate({template:exampleBlockInst, blockNum:1})}, nolog:true}, 
 						{inherit:'dummyForLog'}
 					]
 				}
