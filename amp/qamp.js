@@ -185,7 +185,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"Vous allez voir apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois. "+ 
 			"Les photos servent de signal indiquant l'apparition du caractère chinois. "+
 			"Votre tâche est d'estimer la mesure dans laquelle le caractère chinois qui apparait vous plait visuellement. "+
-			"Ne tenez pas compte de l'image que vous aurez vu juste avant. "+
+			"Ne tenez pas compte de l'image que vous aurez vu juste avant.</p> "+
+			'<p style="font-size:16px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>'+			
 			"Vore tâche sera de noter si vous trouvez que le caractère chinois est plus ou moins plaisant visuellement. " +
 			"Les photos servant de signal peuvent parfois biaiser les jugements des caractères chinois. "+
 			"Nous nous intéressons à la façon selon laquelle les gens évitent les biais. " +
