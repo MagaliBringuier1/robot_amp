@@ -185,7 +185,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"Vous allez voir apparaître des images les unes après les autres. La première sera une photo. La seconde sera un caractère chinois. "+ 
 			"Les photos servent de signal indiquant l'apparition du caractère chinois. "+
 			"Votre tâche est d'estimer la mesure dans laquelle le caractère chinois qui apparait vous plait visuellement. "+
-			"Ne tenez pas compte de l'image que vous aurez vu juste avant.</p> "+
+			"Concentrez vous et ne tenez pas compte de l'image que vous aurez vu juste avant.</p> "+
 			'<p style="font-size:16px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>'+			
 			"Vore tâche sera de noter si vous trouvez que le caractère chinois est plus ou moins plaisant visuellement. " +
 			"Les photos servant de signal peuvent parfois biaiser les jugements des caractères chinois. "+
@@ -194,7 +194,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"Le but est de donner une évaluation rapide et sans réfléchir des caractères, quelles que soient l'image qui les précède. <br/><br/></p>"+ 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			"Pour vous donner une idée de la tâche à accomplir, nous commencerons par 8 essais. "+
-			"La tâche va commencer. Votre tâche est de juger si les caractères chinois sont plus ou moins plaisants visuellement."+
+			"La tâche va commencer. Restez bien concentré(e). Votre tâche est de juger si les caractères chinois sont plus ou moins plaisants visuellement."+
 			"Quand vous êtes prêt(e), appuyer sur <b>la barre espace </b>.</p>" + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[1 of nBlocks]</p></div>',
